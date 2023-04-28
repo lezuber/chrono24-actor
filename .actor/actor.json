@@ -1,0 +1,12 @@
+{
+    "actorSpecification": 1,
+    "name": "chrono-actor",
+    "title": "chrono-actor",
+    "description": "chrono-actor",
+    "version": "0.0",
+    "meta": {
+        "templateId": "ts-crawlee-playwright-chrome"
+    },
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile"
+}

@@ -1,0 +1,13 @@
+{
+    "title": "chrono-actor-schema",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "refNumber": {
+            "title": "Watch reference number",
+            "type": "string",
+            "description": "Reference number of the watch you want to track.",
+            "editor": "textfield"
+        }
+    }
+}
