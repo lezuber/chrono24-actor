@@ -7,7 +7,8 @@
             "title": "Watch reference number",
             "type": "string",
             "description": "Reference number of the watch you want to track.",
-            "editor": "textfield"
+            "editor": "textfield",
+            "default": "SBGA211"
         }
     }
 }
