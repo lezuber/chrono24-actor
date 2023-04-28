@@ -7,7 +7,7 @@ router.addDefaultHandler(async ({ enqueueLinks, log }) => {
     await enqueueLinks({
         selector: "#wt-watches a.rcard",
         label: "Listings",
-        limit: 1,
+        limit: 5,
     });
 });
 
@@ -16,13 +16,15 @@ router.addHandler("Listings", async ({ request, page, log }) => {
         .locator(".js-price-shipping-country")
         .textContent();
 
-    // XPath expression to target the Referenznummer
     const referenznummerXPath =
-        '//tr/td[contains(., "Referenznummer")]/following-sibling::td/a';
+        '//tr/td[contains(., "Referenznummer")]/following-sibling::td';
+
     // Extract the Referenznummer using the XPath expression
     const referenceNumber = await page.$eval(
         referenznummerXPath,
-        (elem) => elem.textContent,
+        (elem) => {
+            return elem.textContent ? elem.textContent.trim() : "";
+        },
         { xpath: true }
     );
 

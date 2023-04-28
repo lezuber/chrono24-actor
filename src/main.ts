@@ -9,7 +9,7 @@ import { Actor } from "apify";
 // For more information, see https://crawlee.dev
 import { PlaywrightCrawler } from "crawlee";
 import { router } from "./routes.js";
-import { InputSchema } from "../.actor/input_schema.js";
+import { InputSchema } from "./input_schema.js";
 
 // Initialize the Apify SDK
 await Actor.init();

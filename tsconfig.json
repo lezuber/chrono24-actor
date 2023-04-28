@@ -11,6 +11,6 @@
     },
     "include": [
         "./src/**/*",
-        ".actor/input_schema.ts"
+        "src/input_schema.ts"
     ]
 }
